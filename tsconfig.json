@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "msw"],
     "paths": {
       "@/*": ["./src/*"]
     },
