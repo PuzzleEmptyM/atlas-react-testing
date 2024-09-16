@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CurrentlyPlaying from './components/CurrentlyPlaying';
 import Playlist from './components/Playlist';
 import usePlaylistData from './hooks/usePlaylistData';
@@ -42,7 +42,7 @@ export default function MusicPlayer() {
   const currentSong = playlist.find(song => song.id === currentSongId);
 
   return (
-    <div className="flex bg-secondary self-center mt-12 flex-col md:flex-row shadow-2xl">
+    <div data-testid="music-player" className="flex bg-secondary self-center mt-12 flex-col md:flex-row shadow-2xl">
       <div className="p-3 flex-1">
         {/* Render loading state when data is being fetched */}
         {loading ? (
@@ -57,6 +57,7 @@ export default function MusicPlayer() {
               onNextSong={handleNextSong}
               onShuffleToggle={handleShuffleToggle}
               isShuffling={isShuffling}
+              data-testid="currently-playing"
             />
           )
         )}
