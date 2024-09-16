@@ -20,6 +20,7 @@ interface CurrentlyPlayingProps {
   onNextSong: () => void;
   onShuffleToggle: () => void;
   isShuffling: boolean;
+  'data-testid'?: string;
 }
 
 const CurrentlyPlaying: React.FC<CurrentlyPlayingProps> = ({
@@ -30,9 +31,10 @@ const CurrentlyPlaying: React.FC<CurrentlyPlayingProps> = ({
   onNextSong,
   onShuffleToggle,
   isShuffling,
+  'data-testid': testId,
 }) => {
   return (
-    <div className="flex flex-col justify-center p-4">
+    <div className="flex flex-col justify-center p-4" data-testid={testId}>
       {/* Pass cover art from song prop */}
       <CoverArt src={song.cover} alt={song.title} />
       <div className="mt-4">
