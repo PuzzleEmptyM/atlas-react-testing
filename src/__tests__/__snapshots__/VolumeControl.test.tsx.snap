@@ -1,0 +1,70 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VolumeControl Component > renders at maximum volume 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center space-x-2 mt-6"
+  >
+    <img
+      alt="Volume"
+      class="w-5 h-5"
+      src="/src/assets/medium-volume.png"
+    />
+    <input
+      class="w-48 p-1 h-2 rounded-lg appearance-none cursor-pointer bg-gray-20 range-sm"
+      id="small-range"
+      max="100"
+      min="0"
+      style="border: 1px solid black;"
+      type="range"
+      value="100"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`VolumeControl Component > renders when muted 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center space-x-2 mt-6"
+  >
+    <img
+      alt="Mute"
+      class="w-5 h-5"
+      src="/src/assets/mute.png"
+    />
+    <input
+      class="w-48 p-1 h-2 rounded-lg appearance-none cursor-pointer bg-gray-20 range-sm"
+      id="small-range"
+      max="100"
+      min="0"
+      style="border: 1px solid black;"
+      type="range"
+      value="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`VolumeControl Component > renders with default volume 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center space-x-2 mt-6"
+  >
+    <img
+      alt="Volume"
+      class="w-5 h-5"
+      src="/src/assets/medium-volume.png"
+    />
+    <input
+      class="w-48 p-1 h-2 rounded-lg appearance-none cursor-pointer bg-gray-20 range-sm"
+      id="small-range"
+      max="100"
+      min="0"
+      style="border: 1px solid black;"
+      type="range"
+      value="50"
+    />
+  </div>
+</DocumentFragment>
+`;

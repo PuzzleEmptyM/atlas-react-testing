@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle Component > renders with longer title and artist 1`] = `
+<DocumentFragment>
+  <div
+    class="text-center"
+  >
+    <h2
+      class="text-lg font-bold"
+    >
+      A Very Long Song Title That Might Span Multiple Lines And Should Not Have Any Business Being This Long
+    </h2>
+    <p
+      class="text-sm text-gray-500"
+    >
+      An Artist With An Equally Long Name That Is Very Impressive
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SongTitle Component > renders with special characters in title and artist 1`] = `
+<DocumentFragment>
+  <div
+    class="text-center"
+  >
+    <h2
+      class="text-lg font-bold"
+    >
+      Song Title #1%^:|&lt;:{}?
+    </h2>
+    <p
+      class="text-sm text-gray-500"
+    >
+      Artist @ Name&$!}|{&lt;&gt;?}:
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SongTitle Component > renders with title and artist 1`] = `
+<DocumentFragment>
+  <div
+    class="text-center"
+  >
+    <h2
+      class="text-lg font-bold"
+    >
+      Sample Song
+    </h2>
+    <p
+      class="text-sm text-gray-500"
+    >
+      Sample Artist
+    </p>
+  </div>
+</DocumentFragment>
+`;

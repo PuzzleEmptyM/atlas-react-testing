@@ -1,0 +1,97 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PlayListItem Component > renders with additional prop (className) 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full max-w-lg mt-2.5 custom-class"
+  >
+    <div
+      class="flex justify-between p-2.5"
+    >
+      <div
+        class="text-left"
+      >
+        <p
+          class="text-base font-bold"
+        >
+          Another Test Song
+        </p>
+        <p
+          class="text-gray-600 font-medium"
+        >
+          Another Test Artist
+        </p>
+      </div>
+      <p
+        class="text-gray-400 font-medium text-lg mt-2"
+      >
+        4:20
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PlayListItem Component > renders with longer title and artist name 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full max-w-lg mt-2.5 undefined"
+  >
+    <div
+      class="flex justify-between p-2.5"
+    >
+      <div
+        class="text-left"
+      >
+        <p
+          class="text-base font-bold"
+        >
+          A Very Long Song Title That Exceeds Normal Length And Should Not Be This Long
+        </p>
+        <p
+          class="text-gray-600 font-medium"
+        >
+          An Artist With A Very Long Name For Some Reason
+        </p>
+      </div>
+      <p
+        class="text-gray-400 font-medium text-lg mt-2"
+      >
+        5:05
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PlayListItem Component > renders with required props 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full max-w-lg mt-2.5 undefined"
+  >
+    <div
+      class="flex justify-between p-2.5"
+    >
+      <div
+        class="text-left"
+      >
+        <p
+          class="text-base font-bold"
+        >
+          Test Song
+        </p>
+        <p
+          class="text-gray-600 font-medium"
+        >
+          Test Artist
+        </p>
+      </div>
+      <p
+        class="text-gray-400 font-medium text-lg mt-2"
+      >
+        3:45
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoverArt Component > renders with default props 1`] = `
+<DocumentFragment>
+  <div
+    class="w-image-w h-image-h overflow-hidden"
+  >
+    <img
+      alt="Default cover art"
+      class="w-full h-full object-cover"
+      src="/src/assets/placeholder.svg"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CoverArt Component > renders with different alt text 1`] = `
+<DocumentFragment>
+  <div
+    class="w-image-w h-image-h overflow-hidden"
+  >
+    <img
+      alt="Alternative cover art"
+      class="w-full h-full object-cover"
+      src="/src/assets/placeholder.svg"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CoverArt Component > renders with specific image source 1`] = `
+<DocumentFragment>
+  <div
+    class="w-image-w h-image-h overflow-hidden"
+  >
+    <img
+      alt="Test cover art"
+      class="w-full h-full object-cover"
+      src="test-image.jpg"
+    />
+  </div>
+</DocumentFragment>
+`;
