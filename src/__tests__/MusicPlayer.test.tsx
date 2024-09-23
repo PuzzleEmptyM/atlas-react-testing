@@ -26,6 +26,16 @@ describe('MusicPlayer Component', () => {
     expect(within(currentlyPlaying).getByText('Song 1')).toBeInTheDocument();
   });
 
+  it('toggles play and pause when play button is clicked', async () => {
+    render(<MusicPlayer />);
+    const playPauseButton = await screen.findByAltText('Play');
+    fireEvent.click(playPauseButton);
+    expect(await screen.findByAltText('Pause')).toBeInTheDocument();
+    fireEvent.click(screen.getByAltText('Pause'));
+    expect(await screen.findByAltText('Play')).toBeInTheDocument();
+  });
+  
+  
   it('plays next song when next button is clicked', async () => {
     render(<MusicPlayer />);
     const currentlyPlaying = await screen.findByTestId('currently-playing');
