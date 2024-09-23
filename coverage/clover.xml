@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1727125027444" clover="3.2.0">
-  <project timestamp="1727125027445" name="All files">
+<coverage generated="1727125533388" clover="3.2.0">
+  <project timestamp="1727125533388" name="All files">
     <metrics statements="318" coveredstatements="282" conditionals="52" coveredconditionals="47" methods="21" coveredmethods="17" elements="391" coveredelements="346" complexity="0" loc="318" ncloc="318" packages="4" files="13" classes="13"/>
     <package name="atlas-react-testing">
       <metrics statements="25" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
